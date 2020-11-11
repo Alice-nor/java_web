@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+	<display-name>demo3</display-name>
+
+
+	<servlet>
+		<servlet-name>UserServlet_test</servlet-name>
+		<servlet-class>com.macroviz.web.UserServlet_test</servlet-class>
+	</servlet>
+	
+    <servlet-mapping>
+		<servlet-name>UserServlet_test</servlet-name>
+		<url-pattern>/user/list</url-pattern>
+		<url-pattern>/user/new</url-pattern>
+		<url-pattern>/user/insert</url-pattern>
+		<url-pattern>/user/edit</url-pattern>
+		<url-pattern>/user/update</url-pattern>
+		<url-pattern>/user/delete</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>NewsServlet</servlet-name>
+		<servlet-class>com.macroviz.web.NewsServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>NewsServlet</servlet-name>
+		<url-pattern>/news/list</url-pattern>
+		<url-pattern>/news/new</url-pattern>
+		<url-pattern>/news/insert</url-pattern>
+	</servlet-mapping>
+
+
+	<locale-encoding-mapping-list>
+		<locale-encoding-mapping>
+			<locale>zh_TW</locale>
+			<encoding>UTF-8</encoding>
+		</locale-encoding-mapping>
+	</locale-encoding-mapping-list>
+</web-app>
